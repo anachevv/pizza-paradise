@@ -1,0 +1,282 @@
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('./dark-wood.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: olive;
+    color: #fff;
+    padding-top: 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+nav ul li {
+    margin-bottom: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    writing-mode: vertical-rl; /* Vertical text orientation */
+    text-orientation: mixed; /* Additional support for vertical text orientation */
+}
+
+header {
+    margin-left: 250px;
+    background-color: #800020;
+    color: #fff;
+    padding: 20px;
+}
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/* Privacy */
+
+#privacy {
+    max-width: 800px;
+    margin: 20px auto;
+    margin-left: 650px;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #ffcc66; /* Pizza dough color */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.prv {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.prv h2 {
+    color:#800020;
+    text-align: center;
+}
+.prv p {
+    color: #333;
+    padding-top: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 10%;
+    background-color: brown;
+    color: #fff;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+    margin-left: 250px;
+    padding: 10px 0; /* Adjust padding as needed */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+footer p {
+    margin: 0;
+}
+footer h2 {
+    color: white;
+}
+#title {
+    display: flex;
+    padding-bottom: 0px;
+    justify-content: center;
+    color: white;
+    margin: 0;
+}
+
+#title h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: normal;
+}
+
+#info {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin: 0;
+}
+#info ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+#info li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+#info li a:hover {
+    color: #FFD700;
+}
+#info li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#info span {
+    color: white;
+    padding-bottom: 0;
+}
+
+small {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 767px) {
+    body {
+        margin: 0;
+        /* height: 100vh; */
+        height: auto;
+        background-position: 50% center;
+        position: relative;
+    }
+
+    nav {
+        border-top: 1px solid white;
+        width: 100%;
+        height: auto;
+        position: static;
+        background-color: #800020;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        padding: 5px 8px;
+        font-size: 14px;
+        writing-mode: horizontal-tb;
+        /* Horizontal text orientation */
+    }
+
+    header {
+        margin-left: 0;
+    }
+    header h1 {
+        text-align: center;
+        font-size: 24px;
+        /* border-bottom: 1px solid white; */
+    }
+    
+    #privacy {
+        margin: 100px 20px;
+    }
+
+    footer {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    body {
+        margin: 0;
+        /* height: 100vh; */
+        height: auto;
+        background-position: 50% center;
+        position: relative;
+    }
+
+    nav {
+        border-top: 1px solid white;
+        width: 100%;
+        height: auto;
+        position: static;
+        background-color: #800020;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        padding: 5px 8px;
+        font-size: 14px;
+        writing-mode: horizontal-tb;
+        /* Horizontal text orientation */
+    }
+
+    header {
+        margin-left: 0;
+    }
+    header h1 {
+        text-align: center;
+        font-size: 24px;
+        /* border-bottom: 1px solid white; */
+    }
+    
+    #privacy {
+        margin: 100px 20px;
+    }
+
+    footer {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+
+}

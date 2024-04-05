@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take our pizza quiz">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./quiz.css">
+    <title>Pizza Quiz</title>
+</head>
+<body>
+    <header class="fade-in">
+        <h1 class="pacifico-regular">Pizza Quiz</h1>
+    </header>
+
+    <nav class="fade-in">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="gallery.html">Pizza Gallery</a></li>
+            <li><a href="quiz.html">Pizza Quiz</a></li>
+            <li><a href="articles.html">Latest Pizza Articles</a></li>
+        </ul>
+      </nav>
+    
+    <main class="fade-in">
+      <div class="container">
+        <h2>Ready to take the quiz?</h2>
+        
+        <button class="animated-button" onclick="toggleForm()">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <span class="text">Start</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+        </button>
+      </div>
+
+      <div class="pizza-box">
+        <div class="quiz-content">
+          <h2>Question 1</h2>
+          <p>What is the origin of pizza?</p>
+          <form id="quiz-form" method="post">
+            <!-- Your quiz questions and options go here -->
+            <div class="answers">
+              <input type="radio" id="italy" name="country" value="Italy">
+              <label for="italy">Italy</label><br>
+              
+              <input type="radio" id="greece" name="country" value="Greece">
+              <label for="greece">Greece</label><br>
+              
+              <input type="radio" id="egypt" name="country" value="Egypt">
+              <label for="egypt">Egypt</label><br>
+              
+              <input type="radio" id="china" name="country" value="China">
+              <label for="china">China</label><br>
+            </div>
+            
+            <button type="button" id="back-button">Back</button>
+            <button type="button" id="next-button">Next</button>
+            <!-- <button id="close-button">Close</button> -->
+          </form>
+        </div>
+      </div>
+    </main>
+      
+
+
+      <footer class="fade-in">
+        <div id="title">
+          <h2>Explore the Pizza Paradise</h2>
+        </div>
+        
+        <section id="info">
+          <ul>
+            <li>
+              <a href="about.html">About the Pizza Paradise</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+            <li>
+              <a href="terms.html">Terms of Use</a>
+            </li>
+            <li>
+              <a href="privacy.html">Privacy Policy</a>
+            </li>
+          </ul>
+          <span><small>&copy; 2024 Pizza Paradise. All rights reserved.</small></span>
+        </section>
+      </footer>
+
+      <script src="quiz.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find more information about the website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./contact.css">
+  <title>Contact us</title>
+</head>
+<body>
+  <header class="fade-in">
+    <h1 class="pacifico-regular">Contact us</h1>
+  </header>
+  <nav class="fade-in">
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About us</a>
+      </li>
+      <li>
+        <a href="gallery.html">Pizza Gallery</a>
+      </li>
+      <li>
+        <a href="quiz.html">Pizza Quiz</a>
+      </li>
+      <li>
+        <a href="articles.html">Latest Pizza Articles</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="contact" class="fade-in">
+    <section id="contact-form">
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label> <input type="text" id="name" name="name" required="">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label> <input type="email" id="email" name="email" required="">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label> 
+          <textarea id="message" name="message" rows="5" required=""></textarea>
+        </div><button type="submit" onclick="sendMessage()">Send Message</button>
+      </form>
+    </section>
+    <section id="contact-info">
+      <h2>Contact Information</h2>
+      <p>If you have any questions or inquiries, feel free to contact us:</p>
+      <p>Email: contact@pizzaparadise.com</p>
+      <p>Phone: 123-456-7890</p>
+      <p>Address: New York, NYS, USA</p>
+    </section>
+  </main>
+  
+  <footer class="fade-in">
+    <div id="title">
+      <h2>Explore the Pizza Paradise</h2>
+    </div>
+    <section id="info">
+      <ul>
+        <li>
+          <a href="about.html">About the Pizza Paradise</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact us</a>
+        </li>
+        <li>
+          <a href="terms.html">Terms of Use</a>
+        </li>
+        <li>
+          <a href="privacy.html">Privacy Policy</a>
+        </li>
+      </ul><span><small>© 2024 Pizza Paradise. All rights reserved.</small></span>
+    </section>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>
